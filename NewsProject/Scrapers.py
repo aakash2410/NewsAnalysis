@@ -17,6 +17,7 @@ def TOI(search_term):
     for i in df:
         i=i[1:-1]
         new_df.append(str(i))
+    new_df = pd.DataFrame(new_df, columns = ["Headlines"])
     return new_df
 
 def NDTV(search_term):
