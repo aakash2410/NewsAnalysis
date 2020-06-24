@@ -4,7 +4,7 @@ from selenium import webdriver
 import time
 def TOI(search_term):
     df=[]
-    for i in range(1, 16):
+    for i in range(1, 3):
         source = get(f'https://timesofindia.indiatimes.com/topic/{search_term}/{str(i)}')
         soup = BeautifulSoup(source.text, "html.parser")
         for headlines in soup.find_all('span',class_='title'):
